@@ -10,6 +10,8 @@ export default function Header() {
   // An array of navigation links. This makes it easy to manage and render them dynamically.
   const navLinks = [
     { name: 'About', href: '#about' },
+    { name: 'Interests', href: '#interests' },
+    { name: 'Highlight', href: '#highlight' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
@@ -26,7 +28,7 @@ export default function Header() {
             </Link>
           </div>
           {/* Desktop Navigation Links: Hidden on smaller screens (md) */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {/* We map over the navLinks array to render each link. */}
             {navLinks.map((link, index) => (
               <a
