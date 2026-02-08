@@ -43,6 +43,16 @@ export default function Home() {
                 <p className="text-sm text-light-slate">Survey Responses Analyzed</p>
               </div>
             </div>
+            <div className="mt-12 grid grid-cols-2 gap-6 max-w-xl">
+              <div className="rounded-2xl border border-black/5 bg-white/80 p-4 shadow-sm">
+                <p className="text-2xl font-bold text-lightest-slate">3+</p>
+                <p className="text-sm text-light-slate">Finance & Analytics Projects</p>
+              </div>
+              <div className="rounded-2xl border border-black/5 bg-white/80 p-4 shadow-sm">
+                <p className="text-2xl font-bold text-lightest-slate">150+</p>
+                <p className="text-sm text-light-slate">Survey Responses Analyzed</p>
+              </div>
+            </div>
           </div>
         </section>
 
