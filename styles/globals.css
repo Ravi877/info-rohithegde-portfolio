@@ -17,5 +17,12 @@
   /* Here we apply our custom background and text colors to the body, setting the default look and feel for the entire site. */
   body {
     @apply bg-navy text-slate font-sans;
+    background-image:
+      radial-gradient(circle at top right, rgba(249, 115, 22, 0.16), transparent 40%),
+      radial-gradient(circle at bottom left, rgba(255, 209, 171, 0.45), transparent 45%);
+  }
+
+  ::selection {
+    @apply bg-green/20 text-lightest-slate;
   }
 }

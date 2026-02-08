@@ -14,19 +14,34 @@ export default function Home() {
 
         {/* --- Hero Section --- */}
         {/* This is the first thing a visitor sees. It's designed to be impactful and clearly state who you are and what you do. */}
-        <section id="hero" className="min-h-screen flex flex-col justify-center items-start">
+        <section id="hero" className="min-h-screen flex flex-col justify-center items-start pt-16">
           <div className="w-full">
             {/* Each element has a staggered fade-in animation for a dynamic entry effect. */}
-            <p className="text-green font-mono mb-4 animate-fade-in-up" style={{ animationDelay: '100ms', opacity: 0 }}>Hi, my name is</p>
-            <h1 className="text-5xl md:text-7xl font-bold text-lightest-slate animate-fade-in-up" style={{ animationDelay: '200ms', opacity: 0 }}>Rohit Hegde.</h1>
-            <h2 className="text-4xl md:text-6xl font-bold text-slate mt-2 animate-fade-in-up" style={{ animationDelay: '300ms', opacity: 0 }}>I build value through finance.</h2>
-            <p className="max-w-xl mt-6 text-lg animate-fade-in-up" style={{ animationDelay: '400ms', opacity: 0 }}>
+            <span className="inline-flex items-center gap-2 rounded-full border border-green/30 bg-white/70 px-4 py-2 text-xs font-mono uppercase tracking-[0.3em] text-green shadow-sm animate-fade-in-up" style={{ animationDelay: '100ms', opacity: 0 }}>
+              Finance & Analytics
+            </span>
+            <h1 className="text-5xl md:text-7xl font-bold text-lightest-slate mt-6 animate-fade-in-up" style={{ animationDelay: '200ms', opacity: 0 }}>Rohit Hegde.</h1>
+            <h2 className="text-4xl md:text-6xl font-bold text-slate mt-3 animate-fade-in-up" style={{ animationDelay: '300ms', opacity: 0 }}>I build value through finance.</h2>
+            <p className="max-w-2xl mt-6 text-lg text-light-slate animate-fade-in-up" style={{ animationDelay: '400ms', opacity: 0 }}>
               I'm an MBA Finance graduate with a passion for capital markets, investment research, and trading strategies. I specialize in financial analysis and risk management, turning data into actionable insights.
             </p>
-            <div className="mt-12 animate-fade-in-up" style={{ animationDelay: '500ms', opacity: 0 }}>
-              <a href="#projects" className="text-green border border-green rounded-md px-8 py-4 font-mono text-lg hover:bg-green/10 transition-colors">
-                Check Out My Projects
+            <div className="mt-10 flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: '500ms', opacity: 0 }}>
+              <a href="#projects" className="rounded-full bg-green px-8 py-4 font-mono text-sm uppercase tracking-widest text-white shadow-lg shadow-green/30 hover:bg-green/90 transition-colors">
+                View Projects
               </a>
+              <a href="#contact" className="rounded-full border border-black/10 bg-white/70 px-8 py-4 font-mono text-sm uppercase tracking-widest text-lightest-slate hover:border-green/50 hover:text-green transition-colors">
+                Let's Connect
+              </a>
+            </div>
+            <div className="mt-12 grid grid-cols-2 gap-6 max-w-xl">
+              <div className="rounded-2xl border border-black/5 bg-white/80 p-4 shadow-sm">
+                <p className="text-2xl font-bold text-lightest-slate">3+</p>
+                <p className="text-sm text-light-slate">Finance & Analytics Projects</p>
+              </div>
+              <div className="rounded-2xl border border-black/5 bg-white/80 p-4 shadow-sm">
+                <p className="text-2xl font-bold text-lightest-slate">150+</p>
+                <p className="text-sm text-light-slate">Survey Responses Analyzed</p>
+              </div>
             </div>
           </div>
         </section>
@@ -60,8 +75,8 @@ export default function Home() {
             {/* Profile Image with a creative border effect that animates on hover. */}
             <div className="md:col-span-2 flex justify-center items-center">
               <div className="relative w-64 h-64 md:w-72 md:h-72 group">
-                <div className="absolute inset-0 bg-green rounded-lg transform transition-transform group-hover:translate-x-3 group-hover:translate-y-3"></div>
-                <div className="relative w-full h-full rounded-lg overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-green/30 to-lightest-navy/70 rounded-2xl transform transition-transform group-hover:translate-x-3 group-hover:translate-y-3"></div>
+                <div className="relative w-full h-full rounded-2xl overflow-hidden border border-black/10 bg-white/50">
                   <Image src="/Gemini_Generated_Image_f28a9ef28a.png" alt="Rohit Hegde" layout="fill" objectFit="cover" className="filter grayscale group-hover:filter-none transition-all" />
                 </div>
               </div>
@@ -76,13 +91,18 @@ export default function Home() {
             <span className="text-green font-mono mr-4">02.</span> Where I’ve Worked
             <span className="flex-grow h-px bg-lightest-navy/50 ml-6"></span>
           </h2>
-          <div className="bg-light-navy p-8 rounded-lg shadow-xl">
-              <h3 className="text-xl font-bold text-lightest-slate">Intern @ B P U & Co., Chartered Accountants</h3>
-              <p className="font-mono text-sm text-light-slate mt-1 mb-4">March 2025 - May 2025</p>
+          <div className="bg-white/80 border border-black/5 p-8 rounded-2xl shadow-[0_20px_60px_-40px_rgba(249,115,22,0.35)] backdrop-blur">
+              <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+                <h3 className="text-xl font-bold text-lightest-slate">Tax Analyst @ EY GDS</h3>
+                <span className="rounded-full border border-green/40 bg-white/80 px-4 py-1 text-xs font-mono uppercase tracking-[0.2em] text-green">
+                  Current
+                </span>
+              </div>
+              <p className="font-mono text-sm text-light-slate mt-1 mb-4">June 2025 - Present</p>
               <ul className="space-y-3 text-light-slate">
-                  <li className="flex items-start"><span className="text-green mr-4 mt-1">▹</span>Assisted with GST registration, return filing, and invoice reconciliation using various accounting software.</li>
-                  <li className="flex items-start"><span className="text-green mr-4 mt-1">▹</span>Participated in stock audits at GIVA stores, verifying inventory and meticulously recording audit observations.</li>
-                  <li className="flex items-start"><span className="text-green mr-4 mt-1">▹</span>Reconciled purchase invoices worth over 18 crore and supported the filing of compliance certificates.</li>
+                  <li className="flex items-start"><span className="text-green mr-4 mt-1">▹</span>Prepare and review tax filings, ensuring timely compliance with statutory requirements.</li>
+                  <li className="flex items-start"><span className="text-green mr-4 mt-1">▹</span>Analyze financial statements and transaction data to support accurate tax computations.</li>
+                  <li className="flex items-start"><span className="text-green mr-4 mt-1">▹</span>Collaborate with cross-functional teams to resolve tax queries and maintain audit-ready documentation.</li>
               </ul>
           </div>
         </section>
@@ -96,7 +116,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Project Card 1 */}
-            <div className="bg-light-navy p-6 rounded-lg shadow-xl hover:-translate-y-2 transition-transform">
+            <div className="bg-white/80 border border-black/5 p-6 rounded-2xl shadow-[0_20px_60px_-40px_rgba(249,115,22,0.25)] hover:-translate-y-2 transition-transform">
               <h3 className="text-xl font-bold text-lightest-slate mb-2">Trading Notification System</h3>
               <p className="text-light-slate mb-4">
                 An automated system that integrates the Angel One SmartAPI with a Telegram bot to send real-time trade alerts without auto-executing trades.
@@ -108,7 +128,7 @@ export default function Home() {
               </div>
             </div>
             {/* Project Card 2 */}
-            <div className="bg-light-navy p-6 rounded-lg shadow-xl hover:-translate-y-2 transition-transform">
+            <div className="bg-white/80 border border-black/5 p-6 rounded-2xl shadow-[0_20px_60px_-40px_rgba(249,115,22,0.25)] hover:-translate-y-2 transition-transform">
               <h3 className="text-xl font-bold text-lightest-slate mb-2">Investment Behaviour Analysis</h3>
               <p className="text-light-slate mb-4">
                 A research project analyzing the saving, budgeting, and investing habits of young Indians by surveying over 150 participants.
@@ -120,7 +140,7 @@ export default function Home() {
               </div>
             </div>
             {/* Project Card 3 (Your Blog) */}
-            <div className="bg-light-navy p-6 rounded-lg shadow-xl hover:-translate-y-2 transition-transform">
+            <div className="bg-white/80 border border-black/5 p-6 rounded-2xl shadow-[0_20px_60px_-40px_rgba(249,115,22,0.25)] hover:-translate-y-2 transition-transform">
               <h3 className="text-xl font-bold text-lightest-slate mb-2">Personal Blog & CMS</h3>
               <p className="text-light-slate mb-4">
                 A modern, static-generated blog built with Next.js and styled with Tailwind CSS, featuring a headless CMS for easy content management.
@@ -138,16 +158,18 @@ export default function Home() {
         {/* --- Contact Section --- */}
         {/* A clear call-to-action for visitors to get in touch with you. */}
         <section id="contact" className="py-24 text-center">
-            <h2 className="text-2xl font-bold text-lightest-slate mb-4 flex items-center justify-center">
-                <span className="text-green font-mono mr-4">04.</span> What's Next?
-            </h2>
-            <h3 className="text-5xl font-bold text-lightest-slate mb-4">Get In Touch</h3>
-            <p className="max-w-xl mx-auto text-light-slate mb-8">
-                I'm currently looking for new opportunities to apply my knowledge in finance and analytics. Whether you have a question or just want to say hi, my inbox is always open.
-            </p>
-            <a href="mailto:hegderohit63@gmail.com" className="text-green border border-green rounded-md px-8 py-4 font-mono text-lg hover:bg-green/10 transition-colors">
-                Say Hello
-            </a>
+            <div className="bg-white/80 border border-black/5 rounded-3xl px-6 py-14 shadow-[0_30px_80px_-50px_rgba(249,115,22,0.3)]">
+              <h2 className="text-2xl font-bold text-lightest-slate mb-4 flex items-center justify-center">
+                  <span className="text-green font-mono mr-4">04.</span> What's Next?
+              </h2>
+              <h3 className="text-5xl font-bold text-lightest-slate mb-4">Get In Touch</h3>
+              <p className="max-w-xl mx-auto text-light-slate mb-8">
+                  I'm currently looking for new opportunities to apply my knowledge in finance and analytics. Whether you have a question or just want to say hi, my inbox is always open.
+              </p>
+              <a href="mailto:hegderohit63@gmail.com" className="rounded-full bg-green px-8 py-4 font-mono text-sm uppercase tracking-widest text-white shadow-lg shadow-green/30 hover:bg-green/90 transition-colors">
+                  Say Hello
+              </a>
+            </div>
         </section>
 
       </div>
