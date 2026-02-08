@@ -16,13 +16,13 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-navy/80 backdrop-blur-md shadow-lg">
+    <header className="sticky top-0 z-50 w-full border-b border-black/5 bg-white/70 backdrop-blur-xl">
       <nav className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Site Logo/Name: A link that scrolls the user back to the top of the page. */}
           <div className="flex-shrink-0">
-            <Link href="#hero" className="text-2xl font-bold text-green hover:opacity-80 transition-opacity">
-              RH
+            <Link href="#hero" className="text-2xl font-bold text-lightest-slate hover:text-green transition-colors">
+              RH<span className="text-green">.</span>
             </Link>
           </div>
           {/* Desktop Navigation Links: Hidden on smaller screens (md) */}
@@ -32,7 +32,7 @@ export default function Header() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-lightest-slate hover:text-green transition-colors font-mono"
+                className="text-lightest-slate hover:text-green transition-colors font-mono text-sm tracking-wide"
               >
                 {/* Adding numbered prefixes gives it a classic developer portfolio feel. */}
                 <span className="text-green mr-1">0{index + 1}.</span>
@@ -40,7 +40,12 @@ export default function Header() {
               </a>
             ))}
              {/* A styled link to your resume. It opens in a new tab for convenience. */}
-            <a href="/Rohit Hegde.pdf" target="_blank" rel="noopener noreferrer" className="font-mono text-green border border-green rounded-md px-4 py-2 hover:bg-green/10 transition-colors">
+            <a
+              href="/Rohit Hegde.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-sm text-white bg-green rounded-full px-5 py-2 shadow-lg shadow-green/20 hover:bg-green/90 transition-colors"
+            >
               Resume
             </a>
           </div>
