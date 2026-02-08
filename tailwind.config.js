@@ -11,13 +11,13 @@ module.exports = {
     extend: {
       // Defines a custom, professional color palette inspired by modern development environments.
       colors: {
-        'navy': '#0a192f',          // Main background color, a deep, dark blue.
-        'light-navy': '#112240',    // Lighter background for cards and panels.
-        'lightest-navy': '#233554', // Used for borders or hover states.
-        'slate': '#8892b0',         // Default text color for paragraphs and secondary text.
-        'light-slate': '#a8b2d1',   // A lighter text color for less important info.
-        'lightest-slate': '#ccd6f6', // The main text color used for headings.
-        'green': '#64ffda',         // An accent color for links, buttons, and highlights to draw attention.
+        'navy': '#f8fafc',           // Main background color, a soft white.
+        'light-navy': '#ffffff',     // Lighter background for cards and panels.
+        'lightest-navy': '#fff1e6',  // Used for borders or hover states.
+        'slate': '#4b5563',          // Default text color for paragraphs and secondary text.
+        'light-slate': '#6b7280',    // A lighter text color for less important info.
+        'lightest-slate': '#111827', // The main text color used for headings.
+        'green': '#f97316',          // Accent color updated to vibrant orange.
       },
       // Defines custom animations to add subtle, professional motion to the site.
       animation: {

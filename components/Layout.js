@@ -11,7 +11,9 @@ import Footer from './Footer';
  */
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="relative flex flex-col min-h-screen overflow-hidden bg-navy">
+      <div className="pointer-events-none absolute -top-32 right-0 h-72 w-72 rounded-full bg-green/20 blur-3xl"></div>
+      <div className="pointer-events-none absolute bottom-0 left-0 h-72 w-72 rounded-full bg-lightest-navy/60 blur-3xl"></div>
       <Head>
         {/* The title that appears in the browser tab. It's crucial for SEO. */}
         <title>Rohit Hegde | Finance & Business Analytics</title>
